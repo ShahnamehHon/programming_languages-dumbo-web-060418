@@ -9,7 +9,7 @@
   
   languages.map do | style_name, style |
   style.map do | language, type_info |
-  new_hash[language][:style].push(style_name)
+  new_hash[language][:style] << (style_name)
     end
   end
   new_hash
